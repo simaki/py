@@ -48,5 +48,5 @@ curl https://raw.githubusercontent.com/simaki/python-project/master/.flake8 >> .
 
 ```sh
 curl https://raw.githubusercontent.com/simaki/python-project/master/test.sh > test.sh
-sed -e -i 's/project-name/[project-name]/g' test.sh
+sed -i -e 's/project-name/[project-name]/g' test.sh
 ```
