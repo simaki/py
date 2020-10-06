@@ -25,9 +25,9 @@ poetry init
 Use [Black](https://github.com/psf/black), [isort](https://github.com/PyCQA/isort) and [Flake8](https://flake8.pycqa.org/en/latest/).
 
 ```sh
-curl https://raw.githubusercontent.com/simaki/python-project/master/.black > pyproject.toml
-curl https://raw.githubusercontent.com/simaki/python-project/master/.isort > pyproject.toml
-curl https://raw.githubusercontent.com/simaki/python-project/master/.flake8 >> .flake8
+curl https://raw.githubusercontent.com/simaki/python-project/master/.black >> pyproject.toml
+curl https://raw.githubusercontent.com/simaki/python-project/master/.isort >> pyproject.toml
+curl https://raw.githubusercontent.com/simaki/python-project/master/.flake8 > .flake8
 ```
 
 ### Black
