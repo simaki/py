@@ -4,25 +4,15 @@
 
 This repository provides a template of Python projects.
 
-## .gitignore
-
-macOS + Vim + Python
-
 ```sh
 curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore > .gitignore
 curl https://raw.githubusercontent.com/github/gitignore/master/Global/Vim.gitignore >> .gitignore
 curl https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore >> .gitignore
 ```
 
-## Poetry
-
 ```sh
 poetry init
 ```
-
-## Code formatters
-
-Use [Black](https://github.com/psf/black), [isort](https://github.com/PyCQA/isort) and [Flake8](https://flake8.pycqa.org/en/latest/).
 
 ```sh
 curl https://raw.githubusercontent.com/simaki/python-project/master/.black >> pyproject.toml
@@ -30,23 +20,13 @@ curl https://raw.githubusercontent.com/simaki/python-project/master/.isort >> py
 curl https://raw.githubusercontent.com/simaki/python-project/master/.flake8 > .flake8
 ```
 
-### Black
-
-* [Black official configurations](https://github.com/psf/black#pyprojecttoml)
-
-### isort
-
-* [Black compatible configurations](https://github.com/psf/black/blob/master/docs/compatible_configs.md#isort)
-* [force_single_line](https://pycqa.github.io/isort/docs/configuration/options/#force-single-line): true
-
-### Flake8
-
-* [Black compatible configurations](https://github.com/psf/black/blob/master/docs/compatible_configs.md#isort)
-* ignore: [W503](https://www.flake8rules.com/rules/W503.html)
-
-## Testing
-
 ```sh
 curl https://raw.githubusercontent.com/simaki/python-project/master/test.sh > test.sh
 sed -i '' 's/project-name/[project-name]/g' test.sh
 ```
+
+* gitignore: macOS + Vim + Python
+* code formatters:
+  - [Black](https://github.com/psf/black): [Black official configurations](https://github.com/psf/black#pyprojecttoml)
+  - [isort](https://github.com/PyCQA/isort): [Black compatible configurations](https://github.com/psf/black/blob/master/docs/compatible_configs.md#isort), [force_single_line](https://pycqa.github.io/isort/docs/configuration/options/#force-single-line)
+  - [Flake8](https://flake8.pycqa.org/en/latest/): [Black compatible configurations](https://github.com/psf/black/blob/master/docs/compatible_configs.md#isort), ignore [W503](https://www.flake8rules.com/rules/W503.html)
