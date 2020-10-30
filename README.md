@@ -16,8 +16,9 @@ poetry init
 
 ```sh
 curl https://raw.githubusercontent.com/simaki/python-project/master/.black >> pyproject.toml
-curl https://raw.githubusercontent.com/psf/black/master/docs/compatible_configs/isort/pyproject.toml >> pyproject.toml
 curl https://raw.githubusercontent.com/psf/black/master/docs/compatible_configs/flake8/.flake8 > .flake8
+curl https://raw.githubusercontent.com/psf/black/master/docs/compatible_configs/isort/pyproject.toml >> pyproject.toml
+echo "force_single_line = true" >> pyproject.toml
 ```
 
 ```sh
