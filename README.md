@@ -16,8 +16,8 @@ poetry init
 
 ```sh
 curl https://raw.githubusercontent.com/simaki/python-project/master/.black >> pyproject.toml
-curl https://raw.githubusercontent.com/simaki/python-project/master/.isort >> pyproject.toml
-curl https://raw.githubusercontent.com/simaki/python-project/master/.flake8 > .flake8
+curl https://raw.githubusercontent.com/psf/black/master/docs/compatible_configs/isort/pyproject.toml >> pyproject.toml
+curl https://raw.githubusercontent.com/psf/black/master/docs/compatible_configs/flake8/.flake8 > .flake8
 ```
 
 ```sh
