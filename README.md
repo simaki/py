@@ -5,7 +5,8 @@
 This repository provides a template of Python projects.
 
 ```sh
-curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore > .gitignore
+touch .gitignore
+curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore >> .gitignore
 curl https://raw.githubusercontent.com/github/gitignore/master/Global/Vim.gitignore >> .gitignore
 curl https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore >> .gitignore
 ```
