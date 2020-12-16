@@ -25,7 +25,7 @@ echo "force_single_line = true" >> pyproject.toml
 
 ```sh
 curl https://raw.githubusercontent.com/simaki/python-project/master/test.sh > test.sh
-sed -i '' 's/project-name/[project-name]/g' test.sh
+sed -i '' "s/PROJECT_NAME/$((>&2 echo "Enter project name: \c") && read name && echo "$name\c")/g" test.sh
 ```
 
 * gitignore: macOS + Vim + Python
