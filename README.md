@@ -25,7 +25,6 @@ curl -s https://raw.githubusercontent.com/simaki/python-project/master/test.sh >
 sed -i '' "s/PROJECT_NAME/$((>&2 echo "Enter project name: \c") && read name && echo "$name\c")/g" test.sh
 ```
 
-* gitignore: macOS + Vim + Python
 * code formatters:
   - [Black](https://github.com/psf/black): [Black official configurations](https://github.com/psf/black#pyprojecttoml)
   - [isort](https://github.com/PyCQA/isort): [Black compatible configurations](https://github.com/psf/black/blob/master/docs/compatible_configs.md#isort), [force_single_line](https://pycqa.github.io/isort/docs/configuration/options/#force-single-line)
