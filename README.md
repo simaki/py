@@ -5,7 +5,7 @@
 This repository provides a template of Python projects.
 
 ```sh
-curl -s https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore > .gitignore
+curl -s https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore > .gitignore
 ```
 
 ```sh
@@ -13,12 +13,12 @@ poetry init
 ```
 
 ```sh
-curl -s https://raw.githubusercontent.com/simaki/python-project/master/.black >> pyproject.toml
-curl -s https://raw.githubusercontent.com/psf/black/master/docs/compatible_configs/isort/pyproject.toml >> pyproject.toml
+curl -s https://raw.githubusercontent.com/simaki/python-project/main/.black >> pyproject.toml
+curl -s https://raw.githubusercontent.com/psf/black/main/docs/compatible_configs/isort/pyproject.toml >> pyproject.toml
 echo "force_single_line = true" >> pyproject.toml
 ```
 
 ```sh
-curl -s https://raw.githubusercontent.com/simaki/python-project/master/test.sh > test.sh
+curl -s https://raw.githubusercontent.com/simaki/python-project/main/test.sh > test.sh
 sed -i '' "s/PROJECT_NAME/$((>&2 echo "Enter project name: \c") && read name && echo "$name\c")/g" test.sh
 ```
