@@ -13,12 +13,12 @@ poetry init
 ```
 
 ```sh
-curl -s https://raw.githubusercontent.com/simaki/python-project/main/.black >> pyproject.toml
+curl -s https://raw.githubusercontent.com/simaki/py/main/.black >> pyproject.toml
 curl -s https://raw.githubusercontent.com/psf/black/main/docs/compatible_configs/isort/pyproject.toml >> pyproject.toml
 echo "force_single_line = true" >> pyproject.toml
 ```
 
 ```sh
-curl -s https://raw.githubusercontent.com/simaki/python-project/main/test.sh > test.sh
-sed -i '' "s/PROJECT_NAME/$((>&2 echo "Enter project name: \c") && read name && echo "$name\c")/g" test.sh
+curl -s https://raw.githubusercontent.com/simaki/py/main/Makefile > Makefile
+sed -i '' "s/PROJECT_NAME/$((>&2 echo "Enter project name: \c") && read name && echo "$name\c")/g" Makefile
 ```
